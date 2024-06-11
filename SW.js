@@ -34,7 +34,8 @@ self.addEventListener("fetch", e =>
     //get cache data
     e.respondWith(
         caches.match(e.request)
-        .then(result => (result ? result : caches.match("/47-ServiceWorkers-PWA/error.html")))
+        .then(result => result)
+        .catch(() => caches.match("/47-ServiceWorkers-PWA/error.html"))
     )
     
 });
