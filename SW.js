@@ -18,10 +18,10 @@ self.addEventListener("install", e =>
     console.log("Installing...");
 
     //adding to the cache
-    e.waitUntil(
-        caches.open(cache_name)
-        .then(cache => cache.addAll(datos_cache))
-    )
+    // e.waitUntil(
+    //     caches.open(cache_name)
+    //     .then(cache => cache.addAll(datos_cache))
+    // )
 
 });
 
@@ -32,11 +32,11 @@ self.addEventListener("activate", () => console.log("Activando Service Worker...
 self.addEventListener("fetch", e =>
 {
     //get cache data
-    e.respondWith(
-        caches.match(e.request)
-        .then(result => result)
-        .catch(() => caches.match("/47-ServiceWorkers-PWA/error.html"))
-    )
+    // e.respondWith(
+    //     caches.match(e.request)
+    //     .then(result => result)
+    //     .catch(() => caches.match("/47-ServiceWorkers-PWA/error.html"))
+    // )
     
 });
 
