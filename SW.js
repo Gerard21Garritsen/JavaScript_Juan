@@ -15,7 +15,7 @@ const datos_cache = [
 
 self.addEventListener("install", e =>
 {
-    console.log("Installing...");
+    console.log("Installing...", e);
 
     //adding to the cache
     // e.waitUntil(
@@ -31,6 +31,7 @@ self.addEventListener("activate", () => console.log("Activando Service Worker...
 
 self.addEventListener("fetch", e =>
 {
+    console.log(e)
     //get cache data
     // e.respondWith(
     //     caches.match(e.request)
