@@ -17,7 +17,7 @@ self.addEventListener("install", e =>
 {
     console.log("Installing...", e);
 
-    //adding to the cache
+    //store data into cache
     e.waitUntil(
         caches.open(cache_name)
         .then(cache => cache.addAll(datos_cache))
@@ -33,12 +33,11 @@ self.addEventListener("fetch", e =>
 {
     console.log(e)
     
-    //get cache data
-    // e.respondWith(
-    //     caches.match(e.request)
-    //     .then(result => result)
-    //     .catch(() => caches.match("/47-ServiceWorkers-PWA/error.html"))
-    // )
+    //displays an error window when page isn't reacheable
+    e.respondWith(
+        caches.match(e.request)
+        .then(result => result ?? caches.match("/47-ServiceWorkers-PWA/error.html"))
+    )
     
 });
 
