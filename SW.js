@@ -3,7 +3,7 @@
 const cache_name = "apv-v1";
 
 const datos_cache = [
-    "/",
+    
     "/47-ServiceWorkers-PWA/index.html",
     "/47-ServiceWorkers-PWA/error.html",
     "/47-ServiceWorkers-PWA/css/bootstrap.css",
@@ -32,6 +32,7 @@ self.addEventListener("activate", () => console.log("Activando Service Worker...
 self.addEventListener("fetch", e =>
 {
     console.log(e)
+    
     //get cache data
     // e.respondWith(
     //     caches.match(e.request)

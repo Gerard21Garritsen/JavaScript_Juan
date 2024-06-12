@@ -7,8 +7,4 @@ if('serviceWorker' in navigator)
     
 }
 else
-{
-    console.log("El navegador no soporta SW");
-
-}
-
+    console.log("El navegador no soporta SW"); 
