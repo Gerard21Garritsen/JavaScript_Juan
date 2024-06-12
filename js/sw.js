@@ -34,11 +34,11 @@ self.addEventListener("fetch", e =>
     console.log(e)
     
     //get cache data
-    e.respondWith(
-        caches.match(e.request)
-        .then(result => result)
-        .catch(() => caches.match("/47-ServiceWorkers-PWA/error.html"))
-    )
+    // e.respondWith(
+    //     caches.match(e.request)
+    //     .then(result => result)
+    //     .catch(() => caches.match("/47-ServiceWorkers-PWA/error.html"))
+    // )
     
 });
 
