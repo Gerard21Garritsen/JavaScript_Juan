@@ -1,7 +1,7 @@
 //This file has all code in order to get PWA
 if('serviceWorker' in navigator)
 {
-    navigator.serviceWorker.register("js/SW.js")
+    navigator.serviceWorker.register("js/sw.js")
     .then(registro => console.log("SW registrado", registro))
     .catch(error => console.log(error));
     
