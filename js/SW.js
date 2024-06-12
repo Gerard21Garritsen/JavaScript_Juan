@@ -1,16 +1,16 @@
 //This file has all code related with Servive Worker
 
-const cache_name = "apv-v1";
+// const cache_name = "apv-v1";
 
-const datos_cache = [
+// const datos_cache = [
     
-    "/47-ServiceWorkers-PWA/index.html",
-    "/47-ServiceWorkers-PWA/error.html",
-    "/47-ServiceWorkers-PWA/css/bootstrap.css",
-    "/47-ServiceWorkers-PWA/css/styles.css",
-    "/47-ServiceWorkers-PWA/js/app.js",
-    "/47-ServiceWorkers-PWA/js/apv.js"
-]
+//     "/47-ServiceWorkers-PWA/index.html",
+//     "/47-ServiceWorkers-PWA/error.html",
+//     "/47-ServiceWorkers-PWA/css/bootstrap.css",
+//     "/47-ServiceWorkers-PWA/css/styles.css",
+//     "/47-ServiceWorkers-PWA/js/app.js",
+//     "/47-ServiceWorkers-PWA/js/apv.js"
+// ]
 
 
 self.addEventListener("install", e =>
