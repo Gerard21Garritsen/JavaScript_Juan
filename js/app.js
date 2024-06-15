@@ -1,4 +1,5 @@
 //This file has all code in order to get PWA
+
 if('serviceWorker' in navigator)
 {
     navigator.serviceWorker.register("js/sw.js")
