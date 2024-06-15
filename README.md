@@ -1,2 +1,2 @@
-# JavaScript_Juan
-This repo has all different projects that I made in the Juan Pablo's JavaScript course
+# JavaScript_PWA
+This repo has a little bit project realted with PWAs, this project has the enough elements to be a PWA.
